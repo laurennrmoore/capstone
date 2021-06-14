@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 import Cincinnati from "../img/footer-img/KrogerLogo.png";
 import CBell from "../img/footer-img/CincinnatiBell-logo.png";
@@ -12,9 +13,14 @@ import CincinnatiRed from "../img/footer-img/cincinRed.jpg";
 import cincyZoo from "../img/footer-img/cincyZoo.png";
 import Skylinechili from "../img/footer-img/skyline_logo.png";
 import '../../node_modules/font-awesome/css/font-awesome.min.css'; 
+
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialFacebookCircular } from "react-icons/ti";
-import { MdFavoritehearts } from "react-icons/md";
+import { MdFavorite} from "react-icons/md";
+import orangeLogofinal from "../img/carousel-img/orangeLogofinal.jpg";
+
+
+
 
 const Footer = () => (
    <div className="footer-container">
@@ -48,10 +54,11 @@ const Footer = () => (
             <a id="Mona" href="https://www.linkedin.com/in/mona-jiravirotekul-26347768/"><TiSocialLinkedin color="blue" size="3em" ></TiSocialLinkedin></a>
     </div>
       </div> 
-            <p id="footer-text">We devoted our time and <a href="MdFavoritehearts"></a>
-            heart to create the content of our beloved city.
+            <p id="footer-text">We devoted our time and <MdFavorite color="red" size="1em"></MdFavorite>
+            hearts to create the content of our beloved city.
              We hope you guys find that it's useful infomation when you travel in our hometown. 
              Let us know.<TiSocialFacebookCircular color="blue" size="1.8em"></TiSocialFacebookCircular></p>
+             <Link to="/"><img className="orangeLogofinal" alt='' src= { orangeLogofinal } /></Link>
       
      
       </div>

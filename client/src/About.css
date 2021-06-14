@@ -13,12 +13,12 @@ img.bg-about-img {
 } 
 
 .about-container{
-    background: #39a6a3;
+    background: #295f5d;
     animation: mymove 5s infinite;
 }
 @keyframes  mymove {
     from {background-color: lightcoral;}
-    to {background-color:lightskyblue;}
+    to {background-color:rgb(25, 37, 25);}
 }
 
 #about-img{
@@ -41,6 +41,10 @@ div.About-bg-text {
     padding: 20px;
     margin-top: -250px;
     text-align: center;
+}
+
+.col-md-6 {
+    
 }
 
   

@@ -1,7 +1,64 @@
-body{
-background-color: khaki;    
+
+
+.headline-contact {
+    color: blue;
+    margin-top: -300px;
+    position: relative;
+    z-index: 1;
+
+    
+}
+.title {
+color: blue;   
+margin-top: 20px;
+} 
+
+.text {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
 }
 
-.h2{
-text-decoration-color: black;    
+#subject, #email, #name{
+    border-radius: 8px;
+}
+
+#message {
+    width: 165px;
+    height: 125px;
+    border-radius: 8px;
+}
+
+.bg-container-img {
+    position: absolute;
+    z-index: -2;
+    margin-bottom: 600px;
+    justify-content: center;
+}
+
+#contact-container {
+    background: cadetblue;
+    border: solid 3px #fff;
+    box-shadow: 30px 30px 30px #293B5F;
+    margin-top: 102px;
+    width: 58%;
+    height: 550px;
+    z-index: 1;
+    position: relative; 
+    top: -1200px;
+    left: 48%;
+    text-align: center;
+}
+
+h1#sky-title {
+    position:relative;
+    top: -1150px;
+    left: 90px;
+    color: cornflowerblue;
+    text-shadow: 5px 5px 5px wheat;
+    font-size: 82px;
+    font-weight: bold;
+}
+.btn-submit {
+    border-radius: 8px;
 }

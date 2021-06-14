@@ -3,12 +3,30 @@
  }
 
 .queenCity {
-    background-color: grey;
-    color: honeydew;
+    color: rgb(26, 29, 26);
     text-align: center;
+    text-shadow:  1px 2px 2px #fff;
+    margin-top: 12px;
     
     
 }
+.border-container {
+    width: 100%;
+    height: 80px;
+    background-color: #C06014;
+    border: solid 2px black;
+    box-shadow: 5px 0px 10px 10px black;
+   
+}
+
+.border-bg-text {
+   background: #346751;
+   width: 80%; 
+   margin-left: 8%;
+   box-shadow: 10px 10px 8px grey;
+  
+}
+
 
 .eat-container {
     background-color: coral;
