@@ -1,13 +1,8 @@
 import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-// import cincy_favicon from "../img/footer-img/cincy_favicon.jpg";
-// import cincylogo from "../img/body-img/cincylogo.jpg";
-
-// import cincy_favicon from "../img/footer-img/cincy_favicon.jpg";
-import logo from "../img/body-img/logo.jpg";
 
 import '../Components/navigation.css'
-import Cincylogo from "../img/footer-img/cincylogo.jpg";
+import orangeLogofinal from "../img/carousel-img/orangeLogofinal.jpg";
 
 const Navbar = () => {
        // const handleClick = e => {
@@ -22,22 +17,19 @@ const Navbar = () => {
         <header>
           <nav className="nav">
             <div className="container">
-             
-                {/* <a href="/">
-                <img className="navbarlogo" alt='' src= { cincy-logo } /> 
-                </a> */}
+
                 <div id="mainListDiv" className="main_list">
+
                     <ul className="navlinks">
+                         <li><NavLink to="/"><img className="orangeLogofinal" id="orangeLogofinal" 
+                        alt='' src= { orangeLogofinal } /></NavLink></li>
+                          <li><NavLink style={{textDecoration: 'none'}}to="/Attractions">Attractions</NavLink></li>
+                          <li><NavLink style={{textDecoration: 'none'}}to="/Covid">Covid-19</NavLink></li>
+                          <li><NavLink style={{textDecoration: 'none'}}to="/About">About us</NavLink></li>
+                          <li><NavLink style={{textDecoration: 'none'}}to="/contact">Contact us</NavLink></li>
 
+                   </ul>
 
-    <li><NavLink to="/NotHome"><img className="cincylogo" id="logo" height="50
-    5px" width="120px" alt='' src= { Cincylogo } /></NavLink></li>
-                      
-                    <li><NavLink to="/NotHome">Attractions</NavLink></li>
-                    <li><NavLink to="/Covid">Covid 19</NavLink></li>
-                    <li><NavLink to="/About">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
-                    </ul>
                 </div>
              </div>
            </nav>

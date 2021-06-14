@@ -3,6 +3,7 @@ import NavBar from './Navbar';
 import Footer from './Footer';
 import './play.css';
 
+import { BiHeartCircle } from "react-icons/bi";
 import chilidish from '../img/body-img/chilidish.jpg';
 import chiliver from '../img/body-img/chiliver.jpg';
 import chilidinner from '../img/body-img/chilidinner.jpg';
@@ -49,12 +50,19 @@ import 'aos/dist/aos.css';
 export default class Play extends Component{
   render(){
     return (
-        <div className="body-container" data-aos="fade-right"> 
-        <h1 className="queenCity">Explore The Queen city. Be sure to <span> eat, shop & play</span></h1>
+     <div className="body-container" data-aos="fade-right"> 
+
+       <div className="border-container">
+         <div className="border-bg-text">
+        <h1 className="queenCity"><BiHeartCircle color="grey" width="1.8em"></BiHeartCircle>
+        The Queen city. Be sure to <span> eat, shop & play</span><BiHeartCircle color="grey" width="1.8em"></BiHeartCircle></h1>
+        </div>
+       </div> 
+
           <div className="eat-container">
-          <img className="body-img" id="swirl" data-aos="fade-left" alt='' src= { swirl} />
-          <h1 className="easy-header" data-aos="fade-left"><br/>EAT</h1>
-          <p>Enjoy a traditional lei greeting and experience a luau on Oahu. Hosted by Chief Sielu, Original World Fire Knife Dance Champion, this event provides the ideal opportunity to immerse yourself in island culture. Watch a Polynesian show, learn headband weaving, or take a hula lesson, before indulging in a Hawaiian feast, including pineapple glazed chicken and kalua pork. Upgrade to include priority access and convenient pickup, for a hassle-free experience.</p>
+            <img className="body-img" id="swirl" data-aos="fade-left" alt='' src= { swirl} />
+            <h1 className="easy-header" data-aos="fade-left"><br/>EAT</h1>
+            <p>Enjoy a traditional lei greeting and experience a luau on Oahu. Hosted by Chief Sielu, Original World Fire Knife Dance Champion, this event provides the ideal opportunity to immerse yourself in island culture. Watch a Polynesian show, learn headband weaving, or take a hula lesson, before indulging in a Hawaiian feast, including pineapple glazed chicken and kalua pork. Upgrade to include priority access and convenient pickup, for a hassle-free experience.</p>
 
                <img className="body-img" id="A" alt='' src= { chilidish } />
                <img className="body-img" id="B" alt='' src= { chiliver } />
@@ -106,7 +114,12 @@ export default class Play extends Component{
          </div>
                <h1 className="play-header" data-aos="fade-up">PLAY</h1>
 
-               <p>Enjoy a traditional let greeting and experience a luau on Oahu. Hosted by Chief Sielu, Original World Fire Knife Dance Champion, this event provides the ideal opportunity to immerse yourself in island culture. Watch a Polynesian show, learn headband weaving, or take a hula lesson, before indulging in a Hawaiian feast, including pineapple glazed chicken and kalua pork. Upgrade to include priority access and convenient pickup, for a hassle-free experience.
+               <p>Enjoy a traditional let greeting and experience a luau on Oahu. 
+               Hosted by Chief Sielu, Original World Fire Knife Dance Champion, this event provides 
+               the ideal opportunity to immerse yourself in island culture. Watch a Polynesian show, 
+               learn headband weaving, or take a hula lesson, before indulging in a Hawaiian feast, 
+               including pineapple glazed chicken and kalua pork. Upgrade to include priority access 
+               and convenient pickup, for a hassle-free experience.
               </p>
 
                <img className="body-img" id="ornament" alt='' src= { ornament } />

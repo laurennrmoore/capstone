@@ -1,4 +1,7 @@
 import React, {useState} from 'react'
+import '../contact.css';
+
+import sky from "../img/contact-img/sky.jpg";
 
 
 export default class Contact extends React.Component {
@@ -80,11 +83,18 @@ render() {
   return (
       <div className="section">
           <div className="container">
+          <img className="bg-contact-img" alt='' src= { sky } />
               <div className="row">
                   <div className="col-md-12">
                       <div className="section-title">
-                          <h2 className="title">Contact Us</h2>
-                          <p>Let us know what you think! In order to provide better service,
+
+                <div className="bg-container">
+               <h1 id="sky-title">Sky isn't limit<br /> to reach us</h1>
+                  </div>
+                    <div className="contact-container" id="contact-container">
+                   
+                          <h2 className="title">Shout us here!</h2>
+                          <p className="text">Let us know what you think! In order to provide better service,<br />
                                please do not hesitate to give us your feedback. Thank you.</p><hr/>
                           <form id="contact-form" 
                         //   onSubmit={this.submitEmail.bind(this)} 
@@ -97,6 +107,7 @@ render() {
                                 //  onChange={this.onNameChange.bind(this)}
                                 />
                           </div>
+                          
                           <div className="col-md-6">
                               <input placeholder = "Email"  id="email" type="email"
                                 className="form-control" aria-describedby="emailHelp"
@@ -106,27 +117,30 @@ render() {
                           </div>
                           </div>
                           </div>
-                          <div className="form-group">
-                              <input placeholder = "Subject"  id="subject" type="text"
+                          <div className="form-group-subject">
+                              <input placeholder = "Subject"  id="subject" type="text" 
                                 // className="form-control" required value={this.state.subject}
                                 />
                           </div>
-                          <div className="form-group">
+                          <div className="form-group-message">
                               <textarea placeholder = "Message"  id="message" 
                                 //  className="form-control" rows="1" 
                                 //  required value={this.state.message}
                                 //  onChange= {this.onMsgChange.bind(this)} 
                                 />
                           </div>
-                          <button type="submit" className="primary-btn submit">Submit</button>
+                          <button className="btn-submit" type="submit" >Send now</button>
+                          <p className="text">1819 Reading road, Cincinnati, Ohio 45255</p>
                           </form>
+                          </div>
+                          </div>
                       </div>
                   </div>
 
               </div>
 
           </div>
-      </div>
+     
   );
 }
 }
