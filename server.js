@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const path = require('path');
-const router = express.Router();
-const nodemailer = require("nodemailer");
+// const path = require('path');
+// const router = express.Router();
+// const nodemailer = require("nodemailer");
 require('dotenv').config();
 
 const app = express();
@@ -38,27 +38,27 @@ app.listen(PORT, () => {
 
 
 
-//Contact Form Code
-const transporter = nodemailer.createTransport({
-  host: "smtp.example.com", //replace with your email provider
-  port: 587,
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASSWORD
-  }
-});
+// //Contact Form Code
+// const transporter = nodemailer.createTransport({
+//   host: "smtp.example.com", //replace with your email provider
+//   port: 587,
+//   auth: {
+//     user: process.env.EMAIL,
+//     pass: process.env.PASSWORD
+//   }
+// });
 
 
-app.post('/send', (req, res, next) => {
-  var name = req.body.name
-  var email = req.body.email
-  var subject = req.body.subject
-  var message = req.body.message
+// app.post('/send', (req, res, next) => {
+//   var name = req.body.name
+//   var email = req.body.email
+//   var subject = req.body.subject
+//   var message = req.body.message
 
-  var mail = {
-    from: name,
-    to: // receiver email,
-    subject, subject,
-    text: message
-  }
-})
+//   var mail = {
+//     from: name,
+//     to: // receiver email,
+//     subject, subject,
+//     text: message
+//   }
+// })
