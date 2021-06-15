@@ -4,10 +4,13 @@
     color: blue;
     margin-top: -300px;
     position: relative;
-    z-index: 1;
-
-    
+    z-index: 1;  
 }
+
+.section {
+    margin-bottom: -845px;
+}
+
 .title {
 color: blue;   
 margin-top: 20px;
@@ -21,6 +24,7 @@ margin-top: 20px;
 
 #subject, #email, #name{
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 #message {

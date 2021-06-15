@@ -7,7 +7,7 @@
  
 }
 
-img.sponsor-logo{
+img.sponsor-logo {
   padding: 15px 65px 30px 30px; 
   width: 200px; 
   
@@ -39,13 +39,13 @@ div#sponsor-container {
   background-color: grey;
 }
 
-#Marquis :hover {
+ #Marquis :hover {
   background-color: grey;
 }
 
  #Mona :hover {
   background-color: grey;
-} 
+}  
 
 /* .Lauren, .Marquis, .Mona {
   color: #3b14a7;
