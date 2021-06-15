@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import "./index.css";
-import './Carousel.css';
+import './carousel.css';
 import ContactForm from './pages/ContactForm';
 import Footer from './Components/Footer';
 import About from './pages/About';

@@ -30,17 +30,6 @@ const Navbar = () => {
 
                    </ul>
 
-<<<<<<< HEAD
-    <li><NavLink to="/NotHome"><img className="cincylogo" id="logo" height="50
-    5px" width="120px" alt='' src= { Cincylogo } /></NavLink></li>
-                      
-                    <li><NavLink to="/attractions">Attractions</NavLink></li>
-                    <li><NavLink to="/Covid">Covid 19</NavLink></li>
-                    <li><NavLink to="/About">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
-                    </ul>
-=======
->>>>>>> 86b7f077f8aa643569d9587f342a54984bf15302
                 </div>
              </div>
            </nav>

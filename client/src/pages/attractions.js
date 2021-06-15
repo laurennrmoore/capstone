@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import {BACKEND_URL} from '../config'
-
+import '../attractions.css'
 
 const Attraction = (props) => {
     return (
@@ -13,9 +13,7 @@ const Attraction = (props) => {
                 </div>
                 <div>
                     <div className='text-name'>{props.attraction.name}</div>
-                    <div className='text-link'>
-                        <Link className='link-details' Link to={"attractions/" + props.attraction._id}>Details</Link>
-                    </div>
+                    
                     <div className='website'>
                         <a className='link-site' href={props.attraction.website} target="_blank" rel="noreferrer">Website</a>
                     </div>
